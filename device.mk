@@ -244,6 +244,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/qwerty2.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/qwerty2.idc
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keychars/Fxtec_Pro1-X.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/Fxtec_Pro1-X.kcm \
     $(LOCAL_PATH)/configs/keychars/Generic.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/Generic.kcm \
     $(LOCAL_PATH)/configs/keychars/qwerty.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/qwerty.kcm \
     $(LOCAL_PATH)/configs/keychars/qwerty2.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/qwerty2.kcm \
