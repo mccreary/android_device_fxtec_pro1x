@@ -308,6 +308,10 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+## Parts
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 ## Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
