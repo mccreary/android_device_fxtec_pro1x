@@ -403,6 +403,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+# Trebuchet (allow rotation of recent apps list)
+PRODUCT_PACKAGES += \
+    TrebuchetDeviceOverlay
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
