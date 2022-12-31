@@ -20,8 +20,8 @@ static const std::string led_paths[] {
     [BLUE] = LED_PATH("blue"),
 };
 
-static const std::string kKeyboardBacklightPath = "/sys/class/leds/keyboard-backlight/brightness";
-static const std::string kKeyboardMaxBacklightPath = "/sys/class/leds/keyboard-backlight/max_brightness";
+static const std::string kKeyboardBacklightPath = "/sys/class/leds/button-backlight/brightness";
+static const std::string kKeyboardMaxBacklightPath = "/sys/class/leds/button-backlight/max_brightness";
 
 #define AutoHwLight(light) {.id = (int)light, .type = light, .ordinal = 0}
 
