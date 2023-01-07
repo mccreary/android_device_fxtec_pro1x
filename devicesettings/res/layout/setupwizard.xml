@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/SudContentFrame">
+
+        <FrameLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Add your own screen content here -->
+
+                    <!-- Summary text -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/SudItemTitle.GlifDescription"
+                        android:text="@string/setupwizard_summary"/>
+
+                    <!-- Spinner option -->
+                    <TwoLineListItem
+                        android:id="@+id/keylayout_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:mode="twoLine"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/keylayout_title"
+                            android:layout_marginTop="24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/keyboard_layout_title"
+                            style="@style/SpinnerItem" />
+
+                        <Spinner
+                            android:id="@+id/kbd_layout_list"
+                            android:layout_marginTop="48dp"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:saveEnabled="false"/>
+                    </TwoLineListItem>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <!-- Navigation; Keep this! -->
+        <RelativeLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/setupwizard_next"
+                style="@style/SudGlifButton.Primary" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
